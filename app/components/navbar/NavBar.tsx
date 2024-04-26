@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './navbar.module.css'
+import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai'
+
 const NavBar = () => {
     return (
         <div className="bg-white grid  grid-cols-5 text-center place-content-evenly h-20 mx-72">
@@ -26,10 +28,10 @@ const NavBar = () => {
                     <a>Contact</a>
                 </div>
             </div>
-            <div className='items-center flex justify-center space-x-3'>
-                <a>icon1</a>
-                <a>icon2</a>
-                <a>icon3</a>
+            <div className='items-center flex justify-center space-x-5 '>
+                <AiOutlineSearch className='size-8' />
+                <AiOutlineUser className='size-8' />
+                <AiOutlineShoppingCart className='size-8' />
             </div>
         </div>
     )
